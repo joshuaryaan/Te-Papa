@@ -88,6 +88,10 @@ body, html {
 
 /*TYPOGRAPHY*/
 
+h3 {
+    margin: 15px 0 0 10px;
+}
+
 h4 {
     
 }
@@ -127,7 +131,7 @@ p {
 
 .row .item h4, p {
     white-space: normal;
-    margin: 12px;
+    margin: 14px 14px 8px 14px;
 }
 
 
