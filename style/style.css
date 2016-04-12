@@ -27,15 +27,15 @@ body, html {
     vertical-align: middle;   
 }
 
-.actionBar .user {
-    font-size: 22px;
+.actionBar .close {
+    font-size: 38px;
     display: inline-block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 30px;
+    right: 0px;
     color: black;
-    display: none;
+    width: 44px
 }
 
 .nav {
@@ -159,6 +159,14 @@ p {
 .row a { 
     color: inherit;
     text-decoration: none;
+}
+
+.pop {
+    width: 100vw;
+    height: calc(100vh - 49px);
+    background-color: rgba(249, 249, 242, 1);
+    position: absolute;
+    top: 100vh;
 }
 
 /*HOME ENDS*/
