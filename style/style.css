@@ -91,15 +91,22 @@ body, html {
 
 h3 {
     margin: 10px 0 0 10px;
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+}
+
+h3 span {
+    font-weight: 400;
 }
 
 h4 {
-    
+    font-family: 'Roboto Slab', serif;
 }
 
 p {
-    font-size: 14px;
+    font-size: 12px;
     color: rgba(102, 102, 102, 1);
+    font-family: 'Roboto Slab', serif;
 }
 
 /*TYPOGRAPHY ENDS*/
