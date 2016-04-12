@@ -1,6 +1,6 @@
 body, html {
     margin: 0;
-    background-color: white;
+    background-color: rgba(249, 249, 242, 1);
     font-family: sans-serif;
     }
 
@@ -85,3 +85,49 @@ body, html {
     width: 44px;
     text-align: center;
 } 
+
+/*TYPOGRAPHY*/
+
+h4 {
+    
+}
+
+p {
+    font-size: 14px;
+    color: rgba(102, 102, 102, 1);
+}
+
+/*TYPOGRAPHY ENDS*/
+
+/*HOME SPECIFIC RULES*/
+
+.row {
+    height: 330px;
+    padding: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: rgba(249, 249, 242, 1);
+}
+
+.row .item {
+    height: calc(100% - 6px);
+    width: 260px;
+    display: inline-block;
+    background-color: white;
+    overflow: hidden;
+    border-bottom: 6px solid rgba(67, 141, 22, 1);
+}
+
+.row .item img {
+    width: 100%;
+    white-space: normal;
+}
+
+.row .item h4, p {
+    white-space: normal;
+    margin: 12px;
+}
+
+
+/*HOME ENDS*/
