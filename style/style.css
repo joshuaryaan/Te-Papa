@@ -106,7 +106,7 @@ p {
 /*HOME SPECIFIC RULES*/
 
 .row {
-    height: 330px;
+    height: 360px;
     padding: 10px;
     white-space: nowrap;
     overflow-x: auto;
@@ -125,8 +125,22 @@ p {
 }
 
 .row .item img {
-    width: 100%;
     white-space: normal;
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+  height: 196px;
+  overflow: hidden;
 }
 
 .row .item h4, p {
