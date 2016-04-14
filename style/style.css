@@ -151,7 +151,7 @@ p {
   overflow: hidden;
 }
 
-.row .item h4, p {
+.row .item  h4, p {
     white-space: normal;
     margin: 14px 14px 8px 14px;
 }
@@ -181,6 +181,7 @@ p {
     height: 100%;
     max-height: 35vh;
     overflow: hidden;
+    margin-bottom: 20px;
 }
     
 .pop img {
@@ -194,10 +195,14 @@ p {
     height: auto;
     margin: 20px 15px 20px 15px;
     padding: 15px 0 15px 0;
-    border-top: solid 1px #dddddd;
-    border-bottom: solid 1px #dddddd;
 }  
-    
+
+.border {
+    height: auto;
+    margin: 0 15px 0 15px;
+    border-top: solid 1px #dddddd;
+}  
+
 .popContent h3 {
     margin: 0;
 }    
@@ -206,7 +211,11 @@ p {
     margin: 10px 0 0 0;
     font-weight: 400;
     color: rgba(102, 102, 102, 1);
-}     
+} 
+
+.popContent p {
+    margin: 0;
+}
     
 /*HOME ENDS*/
     
