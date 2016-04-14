@@ -11,7 +11,7 @@ $(".item").click(function () {
     'overflow': 'hidden',
     'height': '100%'
     });
-    $(document.body).contents().not(".pop").bind('touchmove', function(e){e.preventDefault()});
+    $("body *").not(".pop").bind('touchmove', function(e){e.preventDefault()});
 });
     
 $(".close").click(function () {
