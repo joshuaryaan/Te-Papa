@@ -1,6 +1,5 @@
 $(document).ready(function () { 
 
-    
     $(".close").hide();
     $(".pop").hide();
     
@@ -16,12 +15,7 @@ $(".item").click(function () {
     'overflow': 'hidden',
     'height': '100%'
     });
-    $('.content').bind('touchmove', function(e){e.preventDefault()
-        $('html, body').css({
-        'overflow': 'hidden',
-        'height': '100%'
-        });                                           
-                                               });
+    $('body').bind('touchmove', function(e){e.preventDefault()});
 });
     
 $(".close").click(function () {
@@ -36,7 +30,7 @@ $(".close").click(function () {
     'overflow': 'auto',
     'height': 'auto'
     });
-    $('.content').unbind('touchmove');
+    $('body').unbind('touchmove');
 });
     
 });
