@@ -167,7 +167,7 @@ p {
     width: 100vw;
     height: calc(100vh - 102px);
     background-color: rgba(249, 249, 242, 1);
-    position: fixed;
+    position: absolute;
     top: 100vh;
     overflow: scroll;
 }
