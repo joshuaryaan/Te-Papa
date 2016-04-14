@@ -1,11 +1,16 @@
 $(document).ready(function () { 
 
+    
     $(".close").hide();
     $(".pop").hide();
     
 $(".item").click(function () {
+    
+    var screenTop = $(document).scrollTop();
+    var screenBottom = $(window).scrollTop() + $(window).height();
+    
     $(".pop").show();
-    $(".pop").animate({"top": "49px"}, "1500");
+    $(".pop").animate({"top": screenTop + 49 + 'px'}, "1500");
     $(".close").fadeIn(400);
     $('html, body').css({
     'overflow': 'hidden',
@@ -15,7 +20,11 @@ $(".item").click(function () {
 });
     
 $(".close").click(function () {
-    $(".pop").animate({"top": "100vh"}, "1500");
+    
+    var screenTop = $(document).scrollTop();
+    var screenBottom = $(window).scrollTop() + $(window).height();
+    
+    $(".pop").animate({"top": screenBottom}, "1500");
     $(".close").fadeOut(200);
     $(".pop").hide(100);
     $('html, body').css({
