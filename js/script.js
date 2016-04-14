@@ -7,13 +7,20 @@ $(".item").click(function () {
     $(".pop").show();
     $(".pop").animate({"top": "49px"}, "1500");
     $(".close").fadeIn(400);
+    $('html, body').css({
+    'overflow': 'hidden',
+    'height': '100%'
+});
 });
     
 $(".close").click(function () {
     $(".pop").animate({"top": "100vh"}, "1500");
     $(".close").fadeOut(200);
     $(".pop").hide(100);
+    $('html, body').css({
+    'overflow': 'auto',
+    'height': 'auto'
 });
-
+});
     
 });
