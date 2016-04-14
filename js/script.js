@@ -1,5 +1,5 @@
 $(document).ready(function () { 
-    
+
     $(".close").hide();
     $(".pop").hide();
     
@@ -9,8 +9,9 @@ $(".item").click(function () {
     $(".close").fadeIn(400);
     $('html, body').css({
     'overflow': 'hidden',
-    'height': '100vh'
+    'height': '100%'
     });
+    $('body').bind('touchmove', function(e){e.preventDefault()});
 });
     
 $(".close").click(function () {
@@ -21,6 +22,7 @@ $(".close").click(function () {
     'overflow': 'auto',
     'height': 'auto'
     });
+    $('body').unbind('touchmove');
 });
     
 });
