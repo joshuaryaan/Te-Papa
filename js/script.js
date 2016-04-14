@@ -16,7 +16,12 @@ $(".item").click(function () {
     'overflow': 'hidden',
     'height': '100%'
     });
-    $('.content').bind('touchmove', function(e){e.preventDefault()});
+    $('.content').bind('touchmove', function(e){e.preventDefault()
+        $('html, body').css({
+        'overflow': 'hidden',
+        'height': '100%'
+        });                                           
+                                               });
 });
     
 $(".close").click(function () {
@@ -32,20 +37,6 @@ $(".close").click(function () {
     'height': 'auto'
     });
     $('.content').unbind('touchmove');
-});
-    
-    $(function() {
-
-  var toolbox = $('.pop'),
-      height = toolbox.height(),
-      scrollHeight = toolbox.get(0).scrollHeight;
-
-  toolbox.bind('touchmove', function(e, d) {
-    if((this.scrollTop === (scrollHeight - height) && d < 0) || (this.scrollTop === 0 && d > 0)) {
-      e.preventDefault();
-    }
-  });
-
 });
     
 });
