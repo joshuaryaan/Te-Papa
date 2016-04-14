@@ -2,17 +2,7 @@ body, html {
     margin: 0;
     background-color: rgba(249, 249, 242, 1);
     font-family: sans-serif;
-    }
-
-* {
-    visibility:hidden;
-}
-
-@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) and (orientation : portrait){ 
-
-    * {
-        visibility: visible;
-    }    
+    }   
     
 .actionBar {
     position: fixed;
@@ -222,4 +212,3 @@ p {
     
 
     
-}

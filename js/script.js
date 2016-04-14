@@ -9,8 +9,8 @@ $(".item").click(function () {
     $(".close").fadeIn(400);
     $('html, body').css({
     'overflow': 'hidden',
-    'height': '100%'
-});
+    'height': '100vh'
+    });
 });
     
 $(".close").click(function () {
@@ -20,7 +20,7 @@ $(".close").click(function () {
     $('html, body').css({
     'overflow': 'auto',
     'height': 'auto'
-});
+    });
 });
     
 });
