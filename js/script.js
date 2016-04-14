@@ -15,7 +15,7 @@ $(".item").click(function () {
     'overflow': 'hidden',
     'height': '100%'
     });
-    $('body').bind('touchmove', function(e){e.preventDefault()});
+    $('.content').bind('touchmove', function(e){e.preventDefault()});
 });
     
 $(".close").click(function () {
@@ -30,7 +30,7 @@ $(".close").click(function () {
     'overflow': 'auto',
     'height': 'auto'
     });
-    $('body').unbind('touchmove');
+    $('.content').unbind('touchmove');
 });
     
 });
