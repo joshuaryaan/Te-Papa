@@ -19,7 +19,7 @@ $(".item").click(function () {
     $('.pop').css({
     'overflow': 'scroll'
     });
-    $('body').bind('touchmove', function(e){e.preventDefault()});
+    
 });
     
 $(".close").click(function () {
@@ -34,7 +34,7 @@ $(".close").click(function () {
     'overflow': 'auto',
     'height': 'auto'
     });
-    $('body').unbind('touchmove');
+    
 });
     
 });
