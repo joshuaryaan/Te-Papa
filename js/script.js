@@ -3,14 +3,6 @@ $(document).ready(function () {
     $(".close").hide();
     $(".pop").hide();
     
-    $( '.pop' ).on( 'mousewheel', function ( e ) {
-    var event = e.originalEvent,
-        d = event.wheelDelta || -event.detail;
-
-    this.scrollTop += ( d < 0 ? 1 : -1 ) * 30;
-    e.preventDefault();
-});
-    
 $(".item").click(function () {
     
     var screenTop = $(document).scrollTop();
@@ -23,7 +15,15 @@ $(".item").click(function () {
     'overflow': 'hidden',
     'height': '100vh'
     });
-    $('.content').bind('touchmove', function(e){e.preventDefault()});
+    $('body').delegate('.content','touchmove',function(e){
+
+    e.preventDefault();
+
+}).delegate('.pop','touchmove',function(e){
+
+    e.stopPropagation();
+
+});
 });
     
 $(".close").click(function () {
@@ -38,7 +38,7 @@ $(".close").click(function () {
     'overflow': 'auto',
     'height': 'auto'
     });
-    $('.content').unbind('touchmove');
+    
 });
     
 });
