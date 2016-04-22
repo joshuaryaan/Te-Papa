@@ -170,6 +170,7 @@ p {
     position: absolute;
     top: 100vh;
     overflow: scroll;
+    padding-bottom: 59px;
 }
     
 
