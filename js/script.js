@@ -1,5 +1,6 @@
 $(document).ready(function () { 
 
+    
     $(".close").hide();
     $(".pop").hide();
     
