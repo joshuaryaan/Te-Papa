@@ -9,12 +9,9 @@ $(document).ready(function () {
 $(".item").click(function () {
     
     $(".pop").show();
-    $(".pop").animate({"top": screenTop + 49 + 'px'}, 400, function() {
-    $( ".content" ).hide();
-  });
+    $(".pop").animate({"top": screenTop + 49 + 'px'}, 400);
     $(".close").fadeIn(400);
-    $('body').css('overflow', 'hidden');
-
+$( ".content" ).hide();
 });
     
 $(".close").click(function () {
@@ -23,8 +20,6 @@ $(".close").click(function () {
     $(".pop").animate({"top": screenBottom}, 400);
     $(".close").fadeOut(200);
     $(".pop").hide(100);
-    $('body').css('overflow', 'auto');
-
 });
     
 });
