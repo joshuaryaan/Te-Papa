@@ -16,6 +16,9 @@ $(".item").click(function () {
     'overflow': 'hidden',
     'height': '100%'
     });
+    $('.pop').css({
+    'overflow': 'scroll'
+    });
     $('body').bind('touchmove', function(e){e.preventDefault()});
 });
     
