@@ -9,17 +9,18 @@ $(document).ready(function () {
 $(".item").click(function () {
     
     $(".pop").show();
-    $(".pop").animate({"top": screenTop + 49 + 'px'}, "1500");
+    $(".pop").animate({"top": screenTop + 49 + 'px'}, 400, function() {
+    $( ".content" ).hide();
+  });
     $(".close").fadeIn(400);
     $('body').css('overflow', 'hidden');
-    $( ".content" ).hide();
 
 });
     
 $(".close").click(function () {
     
     $( ".content" ).show();
-    $(".pop").animate({"top": screenBottom}, "1500");
+    $(".pop").animate({"top": screenBottom}, 400);
     $(".close").fadeOut(200);
     $(".pop").hide(100);
     $('body').css('overflow', 'auto');
