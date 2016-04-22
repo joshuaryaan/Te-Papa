@@ -13,7 +13,7 @@ $(".item").click(function () {
     $(".pop").animate({"top": screenTop + 49 + 'px'}, "1500");
     $(".close").fadeIn(400);
     $('body').css('overflow', 'hidden');
-
+    $('body').css('-webkit-overflow-scrolling', 'touch');
 });
     
 $(".close").click(function () {
