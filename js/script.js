@@ -3,6 +3,14 @@ $(document).ready(function () {
     $(".close").hide();
     $(".pop").hide();
     
+    $( '.pop' ).on( 'mousewheel', function ( e ) {
+    var event = e.originalEvent,
+        d = event.wheelDelta || -event.detail;
+
+    this.scrollTop += ( d < 0 ? 1 : -1 ) * 30;
+    e.preventDefault();
+});
+    
 $(".item").click(function () {
     
     var screenTop = $(document).scrollTop();
