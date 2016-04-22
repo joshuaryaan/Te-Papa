@@ -11,19 +11,11 @@ $(".item").click(function () {
     $(".pop").show();
     $(".pop").animate({"top": screenTop + 49 + 'px'}, "1500");
     $(".close").fadeIn(400);
-    $('html, body').css({
+    $('.content').css({
     'overflow': 'hidden',
     'height': '100vh'
     });
-    $('body').delegate('.content','touchmove',function(e){
-
-    e.preventDefault();
-
-}).delegate('.pop','touchmove',function(e){
-
-    e.stopPropagation();
-
-});
+    $('.content').bind('touchmove', function(e){e.preventDefault()});
 });
     
 $(".close").click(function () {
@@ -34,11 +26,11 @@ $(".close").click(function () {
     $(".pop").animate({"top": screenBottom}, "1500");
     $(".close").fadeOut(200);
     $(".pop").hide(100);
-    $('html, body').css({
+    $('.content').css({
     'overflow': 'auto',
     'height': 'auto'
     });
-    
+    $('.content').unbind('touchmove');
 });
     
 });
