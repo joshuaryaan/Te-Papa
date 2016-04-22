@@ -11,7 +11,7 @@ $(".item").click(function () {
     $(".pop").show();
     $(".pop").animate({"top": screenTop + 49 + 'px'}, 400);
     $(".close").fadeIn(400);
-$( ".content" ).hide();
+    $( ".content" ).delay(400).hide(0);
 });
     
 $(".close").click(function () {
