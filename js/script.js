@@ -8,6 +8,7 @@ $(document).ready(function () {
     
 $(".item").click(function () {
     
+    $(".search").hide();
     $(".pop").show();
     $(".pop").animate({"top": screenTop + 49 + 'px'}, 400);
     $(".close").fadeIn(400);
@@ -18,8 +19,9 @@ $(".close").click(function () {
     
     $( ".content" ).show();
     $(".pop").animate({"top": screenBottom}, 400);
-    $(".close").fadeOut(200);
+    $(".close").fadeOut(100);
     $(".pop").hide(100);
+    $(".search").fadeIn(600);
 });
     
 });
