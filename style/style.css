@@ -316,6 +316,72 @@ p {
 /*POP UP CONTENT ENDS*/
 
 /*HOME ENDS*/
+
+/*MORE*/
+
+.moreList ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-height: calc(100vh - 98px);
+    background-color: #333;
+}
+
+.moreList li {
+    height: 60px;
+    background-color: #333;
+    color: white;
+    border-bottom: solid 1px #666;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    display: block;  
+    line-height: 22px;
+}
+
+.moreList li .text {
+    margin: 8px 0 8px 30px;
+    position: absolute;
+}
+
+.moreList li .sub {
+    font-weight: 400;
+}
+
+.moreList .tab{
+    height: 61px;
+    width: 5px;
+    float: left;
+    position: absolute;
+}
+
+.moreList .green {
+    background-color: rgba(67, 141, 22, 1);
+}
+
+.moreList .blue {
+    background-color: rgba(26, 163, 217, 1);
+}
+
+.moreList .orange {
+    background-color: rgba(217, 109, 0, 1);
+}
+
+.moreList .turq {
+    background-color: rgba(0, 140, 140, 1);
+}
+
+.moreList .purple {
+    background-color: rgba(191, 0, 255, 1);
+}
+
+.moreList .arrow {
+    float: right;
+    margin-right: 30px;
+    font-size: 22px;
+    line-height: 60px
+}
+/*MORE ENDS*/
     
 
     
