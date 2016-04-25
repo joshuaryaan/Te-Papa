@@ -153,8 +153,15 @@ p {
     display: inline-block;
     background-color: white;
     overflow: hidden;
-    border-bottom: 6px solid rgba(67, 141, 22, 1);
     white-space: normal;
+}
+
+.row .green {
+    border-bottom: 6px solid rgba(67, 141, 22, 1);
+}
+
+.row .blue {
+    border-bottom: 6px solid rgba(26, 163, 217, 1);
 }
 
 .row .item img {
