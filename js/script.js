@@ -8,6 +8,9 @@ $(document).ready(function () {
     
 $(".item").click(function () {
     
+    $(".hideaway").animate({"top": -36}, 750);
+    $(".feature").animate({"margin-top": 0}, 400);
+    
     $(".search").hide();
     $(".pop").show();
     $(".pop").animate({"top": screenTop + 49 + 'px'}, 400);
@@ -22,6 +25,13 @@ $(".close").click(function () {
     $(".close").fadeOut(100);
     $(".pop").hide(100);
     $(".search").fadeIn(600);
+});
+    
+$(".hideaway .hide").click(function () {
+    
+    $(".hideaway").animate({"top": -36}, 750);
+    $(".feature").animate({"margin-top": 0}, 400);
+    
 });
     
 });
