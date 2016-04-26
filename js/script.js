@@ -34,4 +34,11 @@ $(".hideaway .hide").click(function () {
     
 });
     
+$(".moreList li").click(function () {
+    
+    $(this).animate({"height": 400}, 750);
+    
+    
+});    
+    
 });

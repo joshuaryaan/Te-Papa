@@ -425,8 +425,7 @@ iframe {
 .moreList .reveal {
     position: absolute;
     width: 100%;
-    top: 100%;
-    height: auto;
+    top: 60px;
 }
 /*MORE ENDS*/
     
