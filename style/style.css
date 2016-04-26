@@ -371,9 +371,9 @@ iframe {
     background-color: #333;
     color: white;
     border-bottom: solid 1px #666;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Hind', sans-serif;
     font-weight: 700;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.8px;
     display: block;  
     line-height: 22px;
     position: relative;
@@ -385,7 +385,9 @@ iframe {
 }
 
 .moreList li .sub {
+    font-family: 'Roboto Slab', serif;
     font-weight: 400;
+    letter-spacing: 0.4px;
 }
 
 .moreList .tab{
