@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(".close").hide();
     $(".pop").hide();
     
-    var revealHeight = $(".moreList li").height()+$(".moreList .reveal").height();
+    var revealHeight = $(".moreList li").height()+$(this).find(".reveal").height();
     
     var screenTop = $(document).scrollTop();
     var screenBottom = $(window).scrollTop() + $(window).height();
@@ -44,10 +44,14 @@ $(".hideaway .hide").click(function () {
 });*/
   
 $( ".moreList li" ).click(function() {
+    
     if ( $(this).height() != revealHeight)
-          $( this ).animate({'height':($(".moreList li").height()+$(".moreList .reveal").height())});
+          $( this ).animate({
+              'height':($(".moreList li").height()+$(this).find(".reveal").height())
+                            });
     else
-          $( this ).animate({ height: 60 }, 750 );
+          $( this ).animate({ height: 70 }, 750 );
 });    
+
     
 });
