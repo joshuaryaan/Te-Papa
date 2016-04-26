@@ -3,6 +3,8 @@ $(document).ready(function () {
     $(".close").hide();
     $(".pop").hide();
     
+    var revealHeight = $(".moreList li").height()+$(".moreList .reveal").height();
+    
     var screenTop = $(document).scrollTop();
     var screenBottom = $(window).scrollTop() + $(window).height();
     
@@ -34,11 +36,18 @@ $(".hideaway .hide").click(function () {
     
 });
     
-$(".moreList li").click(function () {
-    
-    $(this).animate({"height": 400}, 750);
-    
-    
+/*$( ".moreList li" ).click(function() {
+    if ( $(this).height() != 400)
+          $( this ).animate({ height: 400 }, 750 );
+    else
+          $( this ).animate({ height: 60 }, 750 );
+});*/
+  
+$( ".moreList li" ).click(function() {
+    if ( $(this).height() != revealHeight)
+          $( this ).animate({'height':($(".moreList li").height()+$(".moreList .reveal").height())});
+    else
+          $( this ).animate({ height: 60 }, 750 );
 });    
     
 });

@@ -389,7 +389,7 @@ iframe {
 }
 
 .moreList .tab{
-    height: 61px;
+    height: calc(100% + 1px);
     width: 5px;
     float: left;
     position: absolute;
@@ -424,8 +424,12 @@ iframe {
 
 .moreList .reveal {
     position: absolute;
+    display: inline-block;
     width: 100%;
     top: 60px;
+    display: inline-block;
+    height: auto;
+    
 }
 /*MORE ENDS*/
     
