@@ -425,10 +425,11 @@ iframe {
 .moreList .reveal {
     position: absolute;
     display: inline-block;
-    width: 100%;
+    width: calc(100% - 60px);
     top: 60px;
     display: inline-block;
     height: auto;
+    padding: 0 30px 0 30px;
     
 }
 /*MORE ENDS*/
