@@ -73,9 +73,7 @@ $( ".moreList li" ).click(function(e) {
     else
           $(this).find('.arrow').removeClass( "turn" );
 });       
- 
+
     
 });
 
-
-$(".arrow" ).addClass( "turn" );
