@@ -384,6 +384,7 @@ iframe {
     position: absolute;
     height: 46px;
     top: 6px;
+    width: calc(100% - 60px);
 }
 
 .moreList li .sub {

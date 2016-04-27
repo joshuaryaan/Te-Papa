@@ -43,15 +43,20 @@ $(".hideaway .hide").click(function () {
           $( this ).animate({ height: 60 }, 750 );
 });*/
   
-$( ".moreList li" ).click(function() {
+$( ".moreList li" ).click(function(e) {
     
-    if ( $(this).height() != revealHeight)
+     if($(e.target).is('.reveal')){
+            e.preventDefault();
+            return;
+        }
+    
+    if ( $(this).height() < 80)
           $( this ).animate({
               'height':($(".moreList li").height()+$(this).find(".reveal").height())
                             });
     else
           $( this ).animate({ height: 70 }, 750 );
 });    
-
+    
     
 });
