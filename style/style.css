@@ -427,6 +427,14 @@ iframe {
     line-height: 70px
 }
 
+.turn {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    -webkit-transition: transform 500ms; /* Safari */
+    transition: transform 500ms;
+}
+
 .moreList .reveal {
     position: absolute;
     display: inline-block;

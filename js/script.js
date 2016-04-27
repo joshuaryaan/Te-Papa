@@ -54,9 +54,28 @@ $( ".moreList li" ).click(function(e) {
           $( this ).animate({
               'height':($(".moreList li").height()+$(this).find(".reveal").height())
                             });
+    
     else
           $( this ).animate({ height: 70 }, 750 );
-});    
+});   
     
+    
+$( ".moreList li" ).click(function(e) {
+    
+     if($(e.target).is('.reveal')){
+            e.preventDefault();
+            return;
+        }
+    
+    if ( $(this).height() < 80)
+          $(this).find('.arrow').addClass( "turn" );
+    
+    else
+          $(this).find('.arrow').removeClass( "turn" );
+});       
+ 
     
 });
+
+
+$(".arrow" ).addClass( "turn" );
